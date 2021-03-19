@@ -604,6 +604,7 @@ body {
 			color: #FFF200;
 		}
 	}
+	
 	.brand {
 		text-align: center;
 		margin-top: 2rem;
@@ -753,3 +754,21 @@ body {
 		}
 	}
 }
+
+.to-the-top {
+	display: none;
+	position: fixed;
+	right: 24px;
+	bottom: 24px;
+	z-index: 2;
+
+	#to-top{
+		padding: 12px;
+		border: 2px solid #fff;
+		background-color: #4e9525;
+		color: #fff;
+		font-size: 24px;
+		outline: none;
+	  }
+	  :hover { -webkit-box-shadow: 0 1px 5px #fbd341; box-shadow: 0 1px 5px #fbd341; }
+  }

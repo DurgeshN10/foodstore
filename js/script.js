@@ -39,3 +39,25 @@ $(document).ready(function(){
     });
 
 });
+
+
+// To the top Function Starts ------------------------
+var toTop = document.getElementById('to-top');
+toTop.onclick = goToTop;
+
+function goToTop() {
+  document.body.scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+window.onscroll = function () {
+  toggleToTop();
+};
+
+// Hides and Displays button according to some specified pixel
+function toggleToTop() {
+  if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
+    document.getElementsByClassName('to-the-top')[0].style.display = 'block';
+  } else {
+    document.getElementsByClassName('to-the-top')[0].style.display = 'none';
+  }
+}
